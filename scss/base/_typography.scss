@@ -1,0 +1,46 @@
+// TYPOGRAPHY
+
+h1 {
+	font-size: 6.4rem;
+	line-height: 7.2rem;
+	color: $white;
+	letter-spacing: -0.8rem;
+	font-weight: 300;
+	color: $ebonyClay;
+}
+
+h2 {
+	font-size: 4rem;
+	line-height: 5.6rem;
+	letter-spacing: -0.5rem;
+	color: $ebonyClay;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+	letter-spacing: -0.225rem;
+	color: $mirage;
+	@include media('<=phone') {
+		font-weight: 600;
+		font-size: 1.4rem;
+		line-height: 2.8rem;
+		text-align: center;
+		letter-spacing: 0.2rem;
+		color: #4c4c4c;
+	}
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.8rem;
+	line-height: 3rem;
+	letter-spacing: -0.225rem;
+	color: $ebonyClay;
+	@include media('<=phone') {
+		font-size: 1.5rem;
+		line-height: 2.8rem;
+		letter-spacing: -0.1875rem;
+	}
+}
