@@ -1,27 +1,28 @@
-// TYPOGRAPHY
+@use '../abstracts' as *;
 
+// TYPOGRAPHY
 h1 {
 	font-size: 6.4rem;
 	line-height: 7.2rem;
-	color: $white;
+	color: var(--white);
 	letter-spacing: -0.8rem;
 	font-weight: 300;
-	color: $ebonyClay;
+	padding-bottom: 2.4rem;
 }
 
 h2 {
 	font-size: 4rem;
 	line-height: 5.6rem;
 	letter-spacing: -0.5rem;
-	color: $ebonyClay;
+	color: var(--ebonyClay);
 }
 
 h3 {
 	font-weight: bold;
 	font-size: 1.8rem;
 	line-height: 2.8rem;
-	letter-spacing: -0.225rem;
-	color: $mirage;
+	letter-spacing: -0.0225rem;
+	color: var(--mirage);
 	@include media('<=phone') {
 		font-weight: 600;
 		font-size: 1.4rem;
@@ -33,14 +34,14 @@ h3 {
 }
 
 p {
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 1.8rem;
 	line-height: 3rem;
-	letter-spacing: -0.225rem;
-	color: $ebonyClay;
+	letter-spacing: -0.0225rem;
+	color: var(--ebonyClay);
 	@include media('<=phone') {
 		font-size: 1.5rem;
 		line-height: 2.8rem;
-		letter-spacing: -0.1875rem;
+		letter-spacing: -0.01875rem;
 	}
 }

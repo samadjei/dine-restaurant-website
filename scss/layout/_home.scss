@@ -1,0 +1,29 @@
+//Navbar
+@use '../abstracts' as *;
+
+.header {
+	background-image: url('../../public/assets/homepage/hero-bg-desktop@2x.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 82rem;
+	background-position: top center;
+
+	&__inner {
+		padding-top: 6.5rem;
+		padding-left: 16.5rem;
+		@include flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+}
+
+.hero {
+	max-width: 52.3rem;
+	padding-top: 15.3rem;
+
+	&--info {
+		padding-bottom: 4.2rem;
+		color: var(--white);
+	}
+}
