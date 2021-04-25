@@ -7,13 +7,12 @@
 	background-size: cover;
 	height: 82rem;
 	background-position: top center;
+	position: relative;
+	padding-left: 16.5rem;
 
 	&__inner {
-		padding-top: 6.5rem;
-		padding-left: 16.5rem;
-		z-index: 0;
-		position: relative;
 		@include flex;
+		padding-top: 6.5rem;
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
@@ -30,4 +29,88 @@
 		color: var(--white);
 		max-width: 44.5rem;
 	}
+}
+
+// Enjoyable
+.enjoyable {
+	position: relative;
+	padding-left: 16.5rem;
+
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		top: 30rem;
+		left: -2rem;
+		background-image: url('../../public/assets/patterns/pattern-curve-top-right.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		width: 89.5rem;
+		height: 32rem;
+	}
+
+	&__image {
+		background-image: url('../../public/assets/homepage/enjoyable-place-desktop@2x.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 54rem;
+		height: 72rem;
+		background-position: center center;
+		transform: translateY(-9rem);
+		z-index: 99;
+	}
+	&__content {
+		margin-left: 12.5rem;
+	}
+}
+
+.flexy {
+	@include flex;
+	justify-content: flex-start;
+}
+
+.content-width {
+	max-width: 44.5rem;
+	text-align: left;
+}
+
+// Locally
+.locally {
+	padding-left: 16.5rem;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		top: 30rem;
+		right: 0;
+		background-image: url('../../public/assets/patterns/pattern-curve-top-left.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		width: 89.5rem;
+		height: 32rem;
+		z-index: 1;
+	}
+
+	&__image {
+		position: relative;
+		background-image: url('../../public/assets/homepage/locally-sourced-desktop@2x.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 54rem;
+		height: 72rem;
+		background-position: center center;
+		z-index: 2;
+	}
+
+	&__content {
+		margin-right: 12.5rem;
+	}
+}
+
+.flexi {
+	@include flex;
+	justify-content: flex-start;
 }
