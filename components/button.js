@@ -1,4 +1,4 @@
-const STYLES = ['btn--primary', 'btn--secondary', 'btn--tertiary'];
+const STYLES = ['btn--dark-normal', 'btn--secondary', 'btn--tertiary'];
 
 const SIZES = ['btn--desktop', 'btn--tablet', 'btn--mobile'];
 

@@ -16,7 +16,7 @@ const Hero = () => {
 						<p className="hero--info">Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.</p>
 
 						<Link href="/signup">
-							<Button className="btn hero--btn" buttonStyle="btn--primary" buttonSize="btn--desktop">
+							<Button className="btn" buttonStyle="btn--dark-normal" buttonSize="btn--desktop">
 								Book a Table
 							</Button>
 						</Link>

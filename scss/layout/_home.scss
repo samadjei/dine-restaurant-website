@@ -11,6 +11,8 @@
 	&__inner {
 		padding-top: 6.5rem;
 		padding-left: 16.5rem;
+		z-index: 0;
+		position: relative;
 		@include flex;
 		flex-direction: column;
 		justify-content: center;
@@ -21,9 +23,11 @@
 .hero {
 	max-width: 52.3rem;
 	padding-top: 15.3rem;
+	text-align: left;
 
 	&--info {
 		padding-bottom: 4.2rem;
 		color: var(--white);
+		max-width: 44.5rem;
 	}
 }
