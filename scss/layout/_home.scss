@@ -2,13 +2,15 @@
 @use '../abstracts' as *;
 
 .header {
+	position: relative;
 	background-image: url('../../public/assets/homepage/hero-bg-desktop@2x.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 82rem;
 	background-position: top center;
-	position: relative;
 	padding-left: 16.5rem;
+	z-index: 3;
+	background-color: #000;
 
 	&__inner {
 		@include flex;
@@ -51,15 +53,21 @@
 	}
 
 	&__image {
-		background-image: url('../../public/assets/homepage/enjoyable-place-desktop@2x.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 54rem;
-		height: 72rem;
-		background-position: center center;
-		transform: translateY(-9rem);
+		position: relative;
 		z-index: 99;
+		transform: translateY(-9rem);
 	}
+
+	// &__image {
+	// 	background-image: url('../../public/assets/homepage/enjoyable-place-desktop@2x.jpg');
+	// 	background-repeat: no-repeat;
+	// 	background-size: cover;
+	// 	width: 54rem;
+	// 	height: 72rem;
+	// 	background-position: center center;
+	// 	transform: translateY(-9rem);
+	// 	z-index: 1000;
+	// }
 	&__content {
 		margin-left: 12.5rem;
 	}
@@ -99,10 +107,16 @@
 		background-image: url('../../public/assets/homepage/locally-sourced-desktop@2x.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: center center;
 		width: 54rem;
 		height: 72rem;
-		background-position: center center;
 		z-index: 2;
+	}
+
+	&__patterns {
+		position: absolute;
+		top: 30rem;
+		right: -10rem;
 	}
 
 	&__content {
@@ -113,4 +127,68 @@
 .flexi {
 	@include flex;
 	justify-content: flex-start;
+}
+
+// Menu
+.menu {
+	position: relative;
+	background: var(--codGray);
+	height: 76.1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__container {
+		max-width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 0 2rem;
+	}
+
+	&__list {
+		margin-left: 12.5rem;
+
+		&--items {
+			&::after {
+				content: '';
+				position: absolute;
+				background-image: url('../../public/assets/patterns/pattern-divide.svg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: 3.2rem;
+				height: 0.1rem;
+			}
+		}
+
+		&--info {
+			max-width: 35rem;
+			font-size: 1.5rem;
+			line-height: 2.8rem;
+			letter-spacing: -0.01875rem;
+		}
+
+		&--content {
+			margin-left: 6.2rem;
+			max-width: 35rem;
+		}
+	}
+
+	&__image {
+		max-width: 12.8rem;
+		height: 9.6rem;
+	}
+
+	&__flex {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+}
+
+.flex {
+	@include flex;
+}
+
+.text-white {
+	color: var(--white);
 }
