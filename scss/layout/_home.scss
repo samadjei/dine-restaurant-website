@@ -145,19 +145,40 @@
 		padding: 0 2rem;
 	}
 
-	&__list {
-		margin-left: 12.5rem;
+	&__middle {
+		// position: relative;
+		margin: 4.9rem 0;
+		// &::after {
+		// 	position: absolute;
+		// 	content: '';
+		// 	border-bottom: solid 1px var(--shuttleGray);
+		// 	left: 12rem;
+		// 	top: -2rem;
+		// 	width: 100%;
+		// 	height: 0.1rem;
+		// }
+	}
 
-		&--items {
-			&::after {
-				content: '';
-				position: absolute;
-				background-image: url('../../public/assets/patterns/pattern-divide.svg');
-				background-repeat: no-repeat;
-				background-size: cover;
-				width: 3.2rem;
-				height: 0.1rem;
-			}
+	&__list {
+		position: relative;
+		margin-left: 12.5rem;
+		&::after {
+			position: absolute;
+			content: '';
+			border-bottom: solid 1px var(--shuttleGray);
+			left: 0;
+			top: 12rem;
+			width: 100%;
+			height: 0.1rem;
+		}
+		&::before {
+			position: absolute;
+			content: '';
+			border-bottom: solid 1px var(--shuttleGray);
+			left: 0;
+			bottom: 12rem;
+			width: 100%;
+			height: 0.1rem;
 		}
 
 		&--info {
@@ -174,8 +195,21 @@
 	}
 
 	&__image {
+		position: relative;
 		max-width: 12.8rem;
 		height: 9.6rem;
+		z-index: 9;
+
+		&::after {
+			position: absolute;
+			content: '';
+			border-bottom: solid 1px var(--beaver);
+			left: 12rem;
+			top: 20%;
+			width: 3.2rem;
+			height: 0.1rem;
+			z-index: -1;
+		}
 	}
 
 	&__flex {
