@@ -1,5 +1,5 @@
 import Head from 'next/head';
-// import Footer from '../components/footer';
+import Footer from '../components/footer';
 const Layout = ({ children }) => {
 	return (
 		<>
@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
 				<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;600;700&display=swap" rel="stylesheet"></link>
 			</Head>
 			<div>
-				{/* <Footer /> */}
+				<Footer />
 				{children}
 			</div>
 		</>
