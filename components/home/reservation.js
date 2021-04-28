@@ -5,8 +5,8 @@ const Reservation = () => {
 	return (
 		<section className="reservation">
 			<div className="container reservation__flex">
-				<div className="reservation__title">
-					<h2 className="reservation__title">Ready to make a reservation?</h2>
+				<div>
+					<h2 className="text--white">Ready to make a reservation?</h2>
 				</div>
 				<Link href="/signup">
 					<Button className="events__btn" buttonStyle="btn--dark-normal" buttonSize="btn--desktop">
