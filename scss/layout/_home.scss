@@ -9,7 +9,7 @@
 	height: 82rem;
 	background-position: top center;
 	padding-left: 16.5rem;
-	z-index: 3;
+	z-index: -999;
 	background-color: #000;
 
 	&__inner {
@@ -25,6 +25,7 @@
 	max-width: 52.3rem;
 	padding-top: 15.3rem;
 	text-align: left;
+	margin-bottom: 12.1rem;
 
 	&--info {
 		padding-bottom: 4.2rem;
@@ -53,31 +54,29 @@
 	}
 
 	&__image {
-		position: relative;
-		z-index: 99;
-		transform: translateY(-9rem);
+		background-image: url('../../public/assets/homepage/enjoyable-place-desktop@2x.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 54rem;
+		height: 72rem;
 	}
 
-	// &__image {
-	// 	background-image: url('../../public/assets/homepage/enjoyable-place-desktop@2x.jpg');
-	// 	background-repeat: no-repeat;
-	// 	background-size: cover;
-	// 	width: 54rem;
-	// 	height: 72rem;
-	// 	background-position: center center;
-	// 	transform: translateY(-9rem);
-	// 	z-index: 1000;
-	// }
+	&__first {
+		position: absolute;
+		left: 30rem;
+		top: -9rem;
+	}
+
 	&__content {
-		margin-left: 12.5rem;
+		margin-left: auto;
 	}
 }
 
 .flexy {
-	@include flex;
-	justify-content: flex-start;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-
 .content-width {
 	max-width: 44.5rem;
 	text-align: left;
@@ -111,6 +110,7 @@
 		width: 54rem;
 		height: 72rem;
 		z-index: 2;
+		box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
 	}
 
 	&__patterns {

@@ -5,8 +5,8 @@ const midSection = () => {
 		<>
 			<section className="enjoyable">
 				<div className="container flexy">
-					<div className="enjoyable__image">
-						<Image className="enjoyable__images" src="/assets/homepage/enjoyable-place-desktop@2x.jpg" alt="Dine logo" width={540} height={720} />
+					<div className="enjoyable__first">
+						<div className="enjoyable__image">{/* <Image className="enjoyable__images" src="/assets/homepage/enjoyable-place-desktop@2x.jpg" alt="Dine logo" width={540} height={720} /> */}</div>
 					</div>
 					<div className="content-width enjoyable__content">
 						<svg xmlns="http://www.w3.org/2000/svg" width="71" height="7">
