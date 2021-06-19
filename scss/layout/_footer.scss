@@ -1,5 +1,7 @@
+@use '../abstracts/colours' as c;
+
 .footer {
-	background: var(--codGray);
+	background: c.$codGray;
 
 	&__inner {
 		display: flex;

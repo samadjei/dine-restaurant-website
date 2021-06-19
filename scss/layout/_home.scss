@@ -1,6 +1,9 @@
 //Navbar
-@use '../abstracts' as *;
+@use '../abstracts/colours' as c;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/breakpoints' as b;
 
+// HERO
 .header {
 	position: relative;
 	background-image: url('../../public/assets/homepage/hero-bg-desktop@2x.jpg');
@@ -8,16 +11,39 @@
 	background-size: cover;
 	height: 82rem;
 	background-position: top center;
-	padding-left: 16.5rem;
 	z-index: -999;
 	background-color: #000;
 
+	@include b.breakpoint(medium) {
+		background-image: url('../../public/assets/homepage/hero-bg-tablet@2x.jpg');
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 99.2rem;
+		background-color: #000;
+	}
+	@include b.breakpoint(medium) {
+		background-image: url('../../public/assets/homepage/hero-bg-mobile@2x.jpg');
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 74.8rem;
+		background-color: #000;
+	}
+
 	&__inner {
-		@include flex;
+		@include m.flex;
 		padding-top: 6.5rem;
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
+		@include b.breakpoint(medium) {
+			padding-top: 37.4rem;
+			align-items: center;
+		}
+		@include b.breakpoint(small) {
+			padding-top: 23.2rem;
+		}
 	}
 }
 
@@ -25,12 +51,25 @@
 	max-width: 52.3rem;
 	padding-top: 15.3rem;
 	text-align: left;
-	margin-bottom: 12.1rem;
+	margin-bottom: 2rem;
+	@include b.breakpoint(medium) {
+		text-align: center;
+		max-width: 68.9rem;
+		padding-top: 3.2rem;
+		margin-bottom: 21.6rem;
+	}
+	@include b.breakpoint(medium) {
+		max-width: 32.7rem;
+		margin-bottom: 15.2rem;
+	}
 
 	&--info {
 		padding-bottom: 4.2rem;
-		color: var(--white);
+		color: c.$white;
 		max-width: 44.5rem;
+		@include b.breakpoint(medium) {
+			margin: 0 auto;
+		}
 	}
 }
 
@@ -59,6 +98,7 @@
 		background-size: cover;
 		width: 54rem;
 		height: 72rem;
+		box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
 	}
 
 	&__first {
@@ -125,14 +165,14 @@
 }
 
 .flexi {
-	@include flex;
+	@include m.flex;
 	justify-content: flex-start;
 }
 
 // Menu
 .menu {
 	position: relative;
-	background: var(--codGray);
+	background: c.$codGray;
 	height: 76.1rem;
 	display: flex;
 	justify-content: space-between;
@@ -155,7 +195,7 @@
 		&::after {
 			position: absolute;
 			content: '';
-			border-bottom: solid 1px var(--shuttleGray);
+			border-bottom: solid 1px c.$shuttleGray;
 			left: 0;
 			top: 12rem;
 			width: 100%;
@@ -164,7 +204,7 @@
 		&::before {
 			position: absolute;
 			content: '';
-			border-bottom: solid 1px var(--shuttleGray);
+			border-bottom: solid 1px c.$shuttleGray;
 			left: 0;
 			bottom: 12rem;
 			width: 100%;
@@ -193,7 +233,7 @@
 		&::after {
 			position: absolute;
 			content: '';
-			border-bottom: solid 1px var(--beaver);
+			border-bottom: solid 1px c.$beaver;
 			left: 12rem;
 			top: 20%;
 			width: 3.2rem;
@@ -210,11 +250,11 @@
 }
 
 .flex {
-	@include flex;
+	@include m.flex;
 }
 
 .text--white {
-	color: var(--white);
+	color: c.$white;
 }
 
 // Events Section

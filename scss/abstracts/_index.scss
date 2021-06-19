@@ -1,4 +1,4 @@
-// Forward is to bring it into this file and send it back out
+// @forward is to bring it into members and send it back out to other members using @use rule 
 // This saves us form writing multiple @use in separate files
 @forward '../abstracts/colours';
 @forward '../abstracts/breakpoints';

@@ -1,4 +1,4 @@
-@use '../abstracts/colours';
+@use '../abstracts/colours' as c;
 
 // Base Button Styling
 .btn {
@@ -19,27 +19,27 @@
 
 // First Button
 .btn--dark-normal {
-	color: var(--white);
+	color: c.$white;
 	background: transparent;
 	transition: all 0.3s ease-out;
-	border: 1px solid var(--white);
+	border: 1px solid c.$white;
 	&:hover,
 	&:focus {
-		color: var(--mirage);
-		background-color: var(--white);
+		color: c.$mirage;
+		background-color: c.$white;
 	}
 }
 
 // Second Button
 .btn--dark-normal {
-	color: var(--white);
+	color: c.$white;
 	background: transparent;
 	transition: all 0.3s ease-out;
-	border: 1px solid var(--white);
+	border: 1px solid c.$white;
 	&:hover,
 	&:focus {
-		color: var(--codGray);
-		background-color: var(--white);
+		color: c.$codGray;
+		background-color: c.$white;
 	}
 }
 
@@ -47,8 +47,7 @@
 
 // Desktop Button
 .btn--desktop {
-	// width: 17rem;
-	// height: 6.4rem;
-	padding: 2.4rem 5.6rem;
+	width: 24.5rem;
+	height: 6.4rem;
 	text-align: center;
 }

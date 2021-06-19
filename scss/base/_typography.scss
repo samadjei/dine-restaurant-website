@@ -1,13 +1,25 @@
-@use '../abstracts' as *;
+@use '../abstracts/colours' as c;
+@use '../abstracts/breakpoints' as b;
 
 // TYPOGRAPHY
 h1 {
 	font-size: 6.4rem;
 	line-height: 7.2rem;
-	color: var(--white);
-	letter-spacing: -0.08rem;
 	font-weight: 300;
 	padding-bottom: 2.4rem;
+	color: c.$white;
+	letter-spacing: -0.08rem;
+	@include b.breakpoint(medium) {
+		font-size: 4.8rem;
+		line-height: 6.4rem;
+		text-align: center;
+		letter-spacing: -0.6px;
+	}
+	@include b.breakpoint(small) {
+		font-size: 3.2rem;
+		line-height: 4rem;
+		letter-spacing: -0.4px;
+	}
 }
 
 h2 {
@@ -15,7 +27,7 @@ h2 {
 	font-weight: 700;
 	line-height: 5.6rem;
 	letter-spacing: -0.05rem;
-	color: var(--ebonyClay);
+	color: c.$ebonyClay;
 	margin-top: 4.8rem;
 	margin-bottom: 1.6rem;
 	padding-right: 3.4rem;
@@ -26,8 +38,8 @@ h3 {
 	font-size: 1.8rem;
 	line-height: 2.8rem;
 	letter-spacing: -0.0225rem;
-	color: var(--mirage);
-	@include media('<=phone') {
+	color: c.$mirage;
+	@include b.breakpoint(xsmall) {
 		font-weight: 600;
 		font-size: 1.4rem;
 		line-height: 2.8rem;
@@ -42,8 +54,8 @@ p {
 	font-size: 1.8rem;
 	line-height: 3rem;
 	letter-spacing: -0.0225rem;
-	color: var(--ebonyClay);
-	@include media('<=phone') {
+	color: c.$ebonyClay;
+	@include b.breakpoint(xsmall) {
 		font-size: 1.5rem;
 		line-height: 2.8rem;
 		letter-spacing: -0.01875rem;

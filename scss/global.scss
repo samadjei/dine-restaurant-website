@@ -1,4 +1,16 @@
-@use 'scss' as *;
+@use 'abstracts/mixins';
+@use 'abstracts/colours';
+@use 'abstracts/breakpoints';
+
+@use 'base/typography';
+
+@use 'component/button';
+
+@use 'layout/grid';
+@use 'layout/footer';
+@use 'layout/home';
+@use 'layout/booking';
+
 
 *,
 *::after,
@@ -38,9 +50,8 @@ img {
 }
 
 .container {
-	width: 144rem;
+	width: 111rem;
 	max-width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 0 2rem;
 }
