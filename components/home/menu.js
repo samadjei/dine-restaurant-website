@@ -39,7 +39,7 @@ const Menu = () => {
 							<Image className="menu__image" src="/assets/homepage/chocolate-desktop-tablet@2x.jpg" alt="Summer Fruit Chocolate Mousse" width={128} height={96} />
 						</div>
 						<div className="menu__list--content">
-							<h3 className="-">Summer Fruit Chocolate Mousse</h3>
+							<h3 className="text--white">Summer Fruit Chocolate Mousse</h3>
 							<p className="text--white menu__list--info">Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
 						</div>
 					</div>

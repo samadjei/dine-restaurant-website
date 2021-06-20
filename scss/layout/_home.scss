@@ -22,7 +22,7 @@
 		height: 99.2rem;
 		background-color: #000;
 	}
-	@include b.breakpoint(medium) {
+	@include b.breakpoint(small) {
 		background-image: url('../../public/assets/homepage/hero-bg-mobile@2x.jpg');
 		background-position: top center;
 		background-repeat: no-repeat;
@@ -76,7 +76,8 @@
 // Enjoyable
 .enjoyable {
 	position: relative;
-	padding-left: 16.5rem;
+	min-height: 72rem;
+	@include m.flex;
 
 	&::after {
 		content: '';
@@ -103,8 +104,8 @@
 
 	&__first {
 		position: absolute;
-		left: 30rem;
 		top: -9rem;
+		// box-shadow: 0 54px 74px -50px #5c6779;
 	}
 
 	&__content {
@@ -124,13 +125,22 @@
 
 // Locally
 .locally {
-	padding-left: 16.5rem;
 	position: relative;
+	min-height: 72rem;
+	margin-bottom: -9rem;
+	z-index: 1;
+
+	.containers {
+		width: 111rem;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
 	&::after {
 		content: '';
 		position: absolute;
 		display: block;
-		top: 30rem;
+		top: 33rem;
 		right: 0;
 		background-image: url('../../public/assets/patterns/pattern-curve-top-left.svg');
 		background-repeat: no-repeat;
@@ -138,25 +148,35 @@
 		background-position: center center;
 		width: 89.5rem;
 		height: 32rem;
-		z-index: 1;
+		z-index: -1;
 	}
 
-	&__image {
-		position: relative;
-		background-image: url('../../public/assets/homepage/locally-sourced-desktop@2x.jpg');
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		position: absolute;
+		top: 30rem;
+		right: 28rem;
+		z-index: 10;
+		background-image: url('../../public/assets/patterns/pattern-lines.svg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
-		width: 54rem;
-		height: 72rem;
-		z-index: 2;
-		box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+		width: 16rem;
+		height: 7.6rem;
 	}
+
+	// &__image {
+	// 	box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+	// }
 
 	&__patterns {
 		position: absolute;
 		top: 30rem;
-		right: -10rem;
+
+		right: 0;
+		z-index: 10;
 	}
 
 	&__content {

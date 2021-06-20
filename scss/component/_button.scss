@@ -39,6 +39,19 @@
 	&:hover,
 	&:focus {
 		color: c.$codGray;
+		background-color: transparent;
+		border: 1px solid c.$mirage;
+	}
+}
+
+.btn--dark-light {
+	color: c.$white;
+	background: c.$codGray;
+	transition: all 0.3s ease-out;
+	border: 1px solid c.$codGray;
+	&:hover,
+	&:focus {
+		color: c.$codGray;
 		background-color: c.$white;
 	}
 }

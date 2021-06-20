@@ -4,9 +4,9 @@ const midSection = () => {
 	return (
 		<>
 			<section className="enjoyable">
-				<div className="container flexy">
+				<div className="container enjoyable__inner flexy">
 					<div className="enjoyable__first">
-						<div className="enjoyable__image">{/* <Image className="enjoyable__images" src="/assets/homepage/enjoyable-place-desktop@2x.jpg" alt="Dine logo" width={540} height={720} /> */}</div>
+						<Image className="enjoyable__images" src="/assets/homepage/enjoyable-place-desktop@2x.jpg" alt="Dine logo" width={540} height={720} />
 					</div>
 					<div className="content-width enjoyable__content">
 						<svg xmlns="http://www.w3.org/2000/svg" width="71" height="7">
@@ -22,7 +22,7 @@ const midSection = () => {
 			</section>
 
 			<section className="locally">
-				<div className="container flexi">
+				<div className="containers flexi">
 					<div className="content-width locally__content">
 						<svg xmlns="http://www.w3.org/2000/svg" width="71" height="7">
 							<g fill="none" fill-rule="evenodd">
@@ -34,13 +34,7 @@ const midSection = () => {
 						<p>All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.</p>
 					</div>
 					<div className="locally__image">
-						<div className="locally__patterns">
-							<svg xmlns="http://www.w3.org/2000/svg" width="160" height="76">
-								<g fill="#9E7F66" fill-rule="evenodd">
-									<path d="M0 70h160v6H0zM0 56h160v6H0zM0 42h160v6H0zM0 28h160v6H0zM0 14h160v6H0zM0 0h160v6H0z" />
-								</g>
-							</svg>
-						</div>
+						<Image className="enjoyable__images" src="/assets/homepage/locally-sourced-desktop@2x.jpg" alt="Dine logo" width={540} height={720} />
 					</div>
 				</div>
 			</section>

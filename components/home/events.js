@@ -20,7 +20,7 @@ const Events = () => {
 					<h2>Family Gathering</h2>
 					<p>We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.</p>
 					<Link href="/signup">
-						<Button className="events__btn" buttonStyle="btn--dark-normal" buttonSize="btn--desktop">
+						<Button className="events__btn" buttonStyle="btn--dark-light" buttonSize="btn--desktop">
 							Book a Table
 						</Button>
 					</Link>
